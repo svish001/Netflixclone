@@ -8,18 +8,17 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+
 function App() {
- 
   return (
     <>
-      <Router>
-      <Header/>
+      <Router basename="/Netflixclone"> {/* Add basename here */}
+        <Header />
         <Routes>
-        <Route path="/" element={<Home />} />
-
-        <Route path="/Plan" element={<Plan />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Plan" element={<Plan />} />
         </Routes>
-      <Footer/>
+        <Footer />
       </Router>
     </>
   );
